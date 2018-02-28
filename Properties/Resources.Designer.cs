@@ -63,6 +63,26 @@ namespace Wumpus.WinFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap darkRoom {
+            get {
+                object obj = ResourceManager.GetObject("darkRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lightRoom {
+            get {
+                object obj = ResourceManager.GetObject("lightRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wumpus_feat {
             get {
                 object obj = ResourceManager.GetObject("wumpus_feat", resourceCulture);
