@@ -17,7 +17,7 @@ namespace Wumpus.WinFormsApp
         // Starts a new game
         public void StartNewGame()
         {
-
+                
         }
 
         // moves through a door, called when the player presses a control to move
@@ -50,17 +50,13 @@ namespace Wumpus.WinFormsApp
 
         }
 
-        // called to update the counts for (coins, turns, arrows)
-        public void UpdateGameStatistics()
-        {
-
-        }
 
         // called to update the (trivia hints, hazard hints) 
         public void UpdateHints()
         {
 
         }
+
 
     }
 }

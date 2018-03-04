@@ -73,7 +73,7 @@ namespace Wumpus.WinFormsApp
 
         private void button8_Click(object sender, EventArgs e)
         {
-            ui.UpdateGameStatistics();
+            
         }
 
         private void button9_Click(object sender, EventArgs e)

@@ -35,6 +35,9 @@
             this.door0 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.door5 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.roomNumberLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.door4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.door3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.door2)).BeginInit();
@@ -42,6 +45,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.door0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.door5)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // door4
@@ -53,6 +57,7 @@
             this.door4.Size = new System.Drawing.Size(283, 177);
             this.door4.TabIndex = 6;
             this.door4.TabStop = false;
+            this.door4.Click += new System.EventHandler(this.door4_Click);
             // 
             // door3
             // 
@@ -63,6 +68,7 @@
             this.door3.Size = new System.Drawing.Size(283, 177);
             this.door3.TabIndex = 5;
             this.door3.TabStop = false;
+            this.door3.Click += new System.EventHandler(this.door3_Click);
             // 
             // door2
             // 
@@ -73,6 +79,7 @@
             this.door2.Size = new System.Drawing.Size(283, 177);
             this.door2.TabIndex = 4;
             this.door2.TabStop = false;
+            this.door2.Click += new System.EventHandler(this.door2_Click);
             // 
             // door1
             // 
@@ -83,6 +90,7 @@
             this.door1.Size = new System.Drawing.Size(283, 177);
             this.door1.TabIndex = 3;
             this.door1.TabStop = false;
+            this.door1.Click += new System.EventHandler(this.door1_Click);
             // 
             // door0
             // 
@@ -93,6 +101,7 @@
             this.door0.Size = new System.Drawing.Size(283, 177);
             this.door0.TabIndex = 2;
             this.door0.TabStop = false;
+            this.door0.Click += new System.EventHandler(this.door0_Click);
             // 
             // pictureBox1
             // 
@@ -113,6 +122,36 @@
             this.door5.Size = new System.Drawing.Size(283, 177);
             this.door5.TabIndex = 1;
             this.door5.TabStop = false;
+            this.door5.Click += new System.EventHandler(this.door5_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.roomNumberLabel);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(789, 795);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(346, 126);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Game statistics";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Room number:";
+            // 
+            // roomNumberLabel
+            // 
+            this.roomNumberLabel.AutoSize = true;
+            this.roomNumberLabel.Location = new System.Drawing.Point(191, 36);
+            this.roomNumberLabel.Name = "roomNumberLabel";
+            this.roomNumberLabel.Size = new System.Drawing.Size(51, 20);
+            this.roomNumberLabel.TabIndex = 1;
+            this.roomNumberLabel.Text = "label2";
             // 
             // MainForm
             // 
@@ -120,6 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
             this.ClientSize = new System.Drawing.Size(1178, 1144);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.door4);
             this.Controls.Add(this.door3);
             this.Controls.Add(this.door2);
@@ -129,6 +169,7 @@
             this.Controls.Add(this.door5);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.door4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.door3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.door2)).EndInit();
@@ -136,6 +177,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.door0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.door5)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -149,5 +192,8 @@
         private System.Windows.Forms.PictureBox door2;
         private System.Windows.Forms.PictureBox door3;
         private System.Windows.Forms.PictureBox door4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label roomNumberLabel;
+        private System.Windows.Forms.Label label1;
     }
 }

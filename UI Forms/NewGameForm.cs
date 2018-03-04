@@ -15,6 +15,13 @@ namespace Wumpus.WinFormsApp
         public NewGameForm()
         {
             InitializeComponent();
+
+            // show the list of available caves
+            string[] CaveList = GameControl.GetAvailableCaves();
+            foreach (string cave in CaveList)
+            {
+                caveList.Items.Add(cave);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
