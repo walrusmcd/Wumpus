@@ -17,7 +17,7 @@ namespace Wumpus.WinFormsApp
             InitializeComponent();
 
             // show the high score list 
-            Score[] highScores = GameControl.GetHighScores();
+            List<Score>  highScores = GameControl.GetHighScores();
             foreach (Score score in highScores)
             {
                 ListViewItem lvi = new ListViewItem(score.Name);

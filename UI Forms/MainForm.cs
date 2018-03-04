@@ -46,6 +46,9 @@ namespace Wumpus.WinFormsApp
         public void UpdateGameStatistics()
         {
             roomNumberLabel.Text = GameControl.GetCurrentRoom().RoomNumber.ToString();
+            turnCountLabel.Text = GameControl.Player.NumberOfTurns.ToString();
+            goldCoinLabel.Text = GameControl.Player.GoldCoins.ToString();
+            arrowCountLabel.Text = GameControl.Player.ArrowCount.ToString();
         }
 
 
@@ -88,6 +91,16 @@ namespace Wumpus.WinFormsApp
         private void door5_Click(object sender, EventArgs e)
         {
             MoveThroughDoor(5);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

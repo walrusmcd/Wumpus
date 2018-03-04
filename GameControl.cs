@@ -8,6 +8,9 @@ namespace Wumpus.WinFormsApp
 {
     static class GameControl
     {
+        static private HighScore highScore = new HighScore();
+        static public Player Player = new Player();
+
         public static Room GetCurrentRoom()
         {
             return new Room();
@@ -15,7 +18,10 @@ namespace Wumpus.WinFormsApp
 
         public static void MoveThroughDoor(int DoorNumber)
         {
-
+            // moving through a tunnel counts as a turn
+            Player.NumberOfTurns += 1;
+            // you get a gold coin each tunnel
+            Player.GoldCoins += 1;
         }
 
         public static string[] GetAvailableCaves()
@@ -31,17 +37,9 @@ namespace Wumpus.WinFormsApp
             return AvailableCaves;
         }
 
-        public static Score[] GetHighScores()
+        public static List<Score> GetHighScores()
         {
-            Score[] HighScores = new Score[5];
-
-            HighScores[0] = new Score("Tim", 50);
-            HighScores[1] = new Score("Dana", 30);
-            HighScores[2] = new Score("Paul", 20);
-            HighScores[3] = new Score("JoFo", 90);
-            HighScores[4] = new Score("Adam", 50);
-
-            return HighScores;
+            return highScore.GetHighScores();
         }
     }
 }

@@ -38,6 +38,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.roomNumberLabel = new System.Windows.Forms.Label();
+            this.turnCountLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.goldCoinLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.arrowCountLabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.door4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.door3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.door2)).BeginInit();
@@ -126,6 +132,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.arrowCountLabel);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.goldCoinLabel);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.turnCountLabel);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.roomNumberLabel);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(789, 795);
@@ -152,6 +164,62 @@
             this.roomNumberLabel.Size = new System.Drawing.Size(51, 20);
             this.roomNumberLabel.TabIndex = 1;
             this.roomNumberLabel.Text = "label2";
+            // 
+            // turnCountLabel
+            // 
+            this.turnCountLabel.AutoSize = true;
+            this.turnCountLabel.Location = new System.Drawing.Point(191, 56);
+            this.turnCountLabel.Name = "turnCountLabel";
+            this.turnCountLabel.Size = new System.Drawing.Size(51, 20);
+            this.turnCountLabel.TabIndex = 3;
+            this.turnCountLabel.Text = "label2";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(19, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Turn count:";
+            // 
+            // goldCoinLabel
+            // 
+            this.goldCoinLabel.AutoSize = true;
+            this.goldCoinLabel.Location = new System.Drawing.Point(191, 76);
+            this.goldCoinLabel.Name = "goldCoinLabel";
+            this.goldCoinLabel.Size = new System.Drawing.Size(51, 20);
+            this.goldCoinLabel.TabIndex = 5;
+            this.goldCoinLabel.Text = "label4";
+            this.goldCoinLabel.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(19, 76);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Gold coins:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // arrowCountLabel
+            // 
+            this.arrowCountLabel.AutoSize = true;
+            this.arrowCountLabel.Location = new System.Drawing.Point(191, 96);
+            this.arrowCountLabel.Name = "arrowCountLabel";
+            this.arrowCountLabel.Size = new System.Drawing.Size(51, 20);
+            this.arrowCountLabel.TabIndex = 7;
+            this.arrowCountLabel.Text = "label6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(19, 96);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 20);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Arrow count:";
             // 
             // MainForm
             // 
@@ -195,5 +263,11 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label roomNumberLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label goldCoinLabel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label turnCountLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label arrowCountLabel;
+        private System.Windows.Forms.Label label7;
     }
 }
